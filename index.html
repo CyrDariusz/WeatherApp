@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/78bbe7955d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>WeatherApi</title>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="search-section">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="city name..." id="city-name-input" />
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="not-found">
+        <img src="/img/error.jpg" alt="">
+        <p>Whoops, looks like there's no city like this.</p>
+      </div>
+      <div class="info-section">
+        <div class="info-box">
+          <img alt="" id="image" />
+          <span class="temperature"></span>
+          <p class="description"></p>
+
+          <div class="other-info">
+            <div class="humidity">
+              <i class="fa-solid fa-water"></i>
+              <div class="humidity-info">
+                <span></span>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="wind">
+              <i class="fa-solid fa-wind"></i>
+              <div class="wind-info">
+                <span></span>
+                <p>Wind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
